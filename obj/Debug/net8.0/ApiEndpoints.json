@@ -1,0 +1,119 @@
+[
+  {
+    "ContainingType": "Lorincz_Lorand_backend.Controllers.AuthorsController",
+    "Method": "GetCount",
+    "RelativePath": "api/authors/feladat12",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lorincz_Lorand_backend.Controllers.AuthorsController",
+    "Method": "GetById",
+    "RelativePath": "api/authors/feladat9/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "library.Models.Author",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lorincz_Lorand_backend.Controllers.BooksController",
+    "Method": "Post",
+    "RelativePath": "api/books/{uid}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uid",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "createNewBook",
+        "Type": "Lorincz_Lorand_backend.Models.DTOs\u002BCreateNewBook",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "library.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lorincz_Lorand_backend.Controllers.BooksController",
+    "Method": "GetAllBook",
+    "RelativePath": "api/books/feladat10",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[library.Models.Book, Lorincz_Lorand_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Lorincz_Lorand_backend.Controllers.CategoriesController",
+    "Method": "GetCategories",
+    "RelativePath": "api/categories/feladat11",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[library.Models.Category, Lorincz_Lorand_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
